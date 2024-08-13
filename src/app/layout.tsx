@@ -26,8 +26,9 @@ export default function RootLayout({
 
 function NavBar() {
   return (
-    <nav className="border p-2">
-      <h1>Note Taking App</h1>
+    <nav className="border p-2 flex justify-between flex-row">
+      <h2>Note Taking App</h2>
+      <div className="border flex flex-col justify-center">Login</div>
     </nav>
   );
 }
