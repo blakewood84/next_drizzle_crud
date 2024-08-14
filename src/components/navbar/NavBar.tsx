@@ -2,6 +2,7 @@ import { createClient } from "@/utils/supabase/server";
 import { LoginButton } from "./LoginButton";
 import { LogoutButton } from "./LogoutButton";
 import { AvatarDropdown } from "./AvatarDropdown";
+import Link from "next/link";
 
 export async function NavBar() {
   const supabase = createClient();
@@ -12,7 +13,9 @@ export async function NavBar() {
 
   return (
     <nav className="border p-2 flex justify-between flex-row">
-      <h2>Note Taking App</h2>
+      <Link href="/">
+        <h2>Note Taking App</h2>
+      </Link>
       {unauthenticated ? <LoginButton /> : <_AuthenticatedOptions />}
     </nav>
   );
