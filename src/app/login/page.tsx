@@ -8,8 +8,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { loginServerAction, signupServerAction } from "@/lib/server_actions";
+import { loginServerAction } from "@/lib/server_actions";
 import Link from "next/link";
 
 // TODO: Add Form Validation on Client and Server
@@ -25,13 +24,12 @@ export default function LoginPage() {
         </CardHeader>
         <CardContent>
           <form>
-            <Label htmlFor="email">Email:</Label>
-            <Input type="email" placeholder="Email" />
-            <div className="py-1" />
-            <Label htmlFor="password">Password:</Label>
-            <Input type="password" placeholder="Password" />
+            <label htmlFor="email">Email:</label>
+            <Input id="email" name="email" type="email" required />
+            <label htmlFor="password">Password:</label>
+            <Input id="password" name="password" type="password" required />
             <div className="flex justify-end pt-2">
-              <Button>Login</Button>
+              <Button formAction={loginServerAction}>Login</Button>
             </div>
           </form>
         </CardContent>
