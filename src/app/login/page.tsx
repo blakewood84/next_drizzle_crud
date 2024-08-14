@@ -14,7 +14,7 @@ import Link from "next/link";
 // TODO: Add Form Validation on Client and Server
 export default function LoginPage() {
   return (
-    <main className="flex justify-center py-4 border">
+    <main className="flex justify-center py-4">
       <Card className="w-[550px]">
         <CardHeader>
           <CardTitle>Login</CardTitle>
