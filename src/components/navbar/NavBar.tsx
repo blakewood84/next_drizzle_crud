@@ -3,6 +3,7 @@ import { LoginButton } from "./LoginButton";
 import { LogoutButton } from "./LogoutButton";
 import { AvatarDropdown } from "./AvatarDropdown";
 import Link from "next/link";
+import { AddNewNoteButton } from "./AddNewNoteButton";
 
 export async function NavBar() {
   const supabase = createClient();
@@ -24,6 +25,7 @@ export async function NavBar() {
 function _AuthenticatedOptions() {
   return (
     <div className="flex flex-row gap-1">
+      <AddNewNoteButton />
       <LogoutButton />
       <AvatarDropdown />
     </div>
