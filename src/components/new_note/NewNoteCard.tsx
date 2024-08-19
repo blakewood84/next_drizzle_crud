@@ -15,22 +15,24 @@ type NewNoteCardProps = {
 
 export function NewNoteCard(props: NewNoteCardProps) {
   return (
-    <Card className="w-[500px]">
-      <CardHeader>
-        <CardTitle>
-          <Input name="title" type="text" placeholder="Title" autoFocus />
-        </CardTitle>
-      </CardHeader>
-      <CardContent>
-        <Textarea
-          name="content"
-          placeholder="Enter your note content here..."
-          rows={10}
-        />
-      </CardContent>
-      <CardFooter>
-        <Button className="w-full">Create</Button>
-      </CardFooter>
-    </Card>
+    <form>
+      <Card className="w-[500px]">
+        <CardHeader>
+          <CardTitle>
+            <Input name="title" type="text" placeholder="Title" autoFocus />
+          </CardTitle>
+        </CardHeader>
+        <CardContent>
+          <Textarea
+            name="content"
+            placeholder="Enter your note content here..."
+            rows={10}
+          />
+        </CardContent>
+        <CardFooter>
+          <Button className="w-full">Create</Button>
+        </CardFooter>
+      </Card>
+    </form>
   );
 }
