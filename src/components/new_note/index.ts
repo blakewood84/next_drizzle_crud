@@ -1,0 +1,1 @@
+export { NewNoteCard } from "./NewNoteCard";

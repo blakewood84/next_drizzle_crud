@@ -3,7 +3,7 @@
     "prefix": ["pfc", "project-functional-component"],
     "body": [
       "type ${1:${TM_FILENAME_BASE}}Props = {",
-      "\tprops: Object",
+      "\tprops?: Object",
       "};",
       "",
       "export function ${1:${TM_FILENAME_BASE}}(props: ${1:${TM_FILENAME_BASE}}Props) {",
