@@ -1,0 +1,15 @@
+{
+  "Project Functional Component": {
+    "prefix": ["pfc", "project-functional-component"],
+    "body": [
+      "type ${TM_FILENAME_BASE}Props = {",
+      "\tprops: Object",
+      "};",
+      "",
+      "export function ${TM_FILENAME_BASE}(props: ${TM_FILENAME_BASE}Props) {",
+      "\treturn <div></div>",
+      "}"
+    ],
+    "description": "A functional component boilerplate for a project"
+  }
+}
