@@ -16,7 +16,7 @@ export async function createNote(formData: FormData) {
     return redirect("/error");
   }
 
-  db.insert(notesTable).values({
+  await db.insert(notesTable).values({
     title: data.title ?? "(No Title)",
     content: data.content ?? "(No Content)",
     userId: 1,
